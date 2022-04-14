@@ -42,6 +42,8 @@ public class WxMaCodeVersionInfo implements Serializable {
   @AllArgsConstructor
   public static class ExpInfo implements Serializable {
 
+    private static final long serialVersionUID = 6315578419554592943L;
+
     /**
      * 提交体验版的时间
      */
@@ -65,6 +67,8 @@ public class WxMaCodeVersionInfo implements Serializable {
   @NoArgsConstructor
   @AllArgsConstructor
   public static class ReleaseInfo implements Serializable {
+
+    private static final long serialVersionUID = 2098307354673939939L;
 
     /**
      * 发布线上版的时间
