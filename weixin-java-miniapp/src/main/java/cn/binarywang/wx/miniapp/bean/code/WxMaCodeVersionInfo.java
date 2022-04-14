@@ -19,9 +19,15 @@ import java.io.Serializable;
 @AllArgsConstructor
 public class WxMaCodeVersionInfo implements Serializable {
 
+  /**
+   * 体验版信息
+   */
   @SerializedName("exp_info")
   private ExpInfo expInfo;
 
+  /**
+   * 线上版信息
+   */
   @SerializedName("release_info")
   private ReleaseInfo releaseInfo;
 
@@ -34,12 +40,21 @@ public class WxMaCodeVersionInfo implements Serializable {
   @AllArgsConstructor
   static class ExpInfo implements Serializable {
 
+    /**
+     * 提交体验版的时间
+     */
     @SerializedName("exp_time")
     private Long expTime;
 
+    /**
+     * 体验版版本信息
+     */
     @SerializedName("exp_version")
     private String expVersion;
 
+    /**
+     * 体验版版本描述
+     */
     @SerializedName("exp_desc")
     private String expDesc;
   }
@@ -49,12 +64,21 @@ public class WxMaCodeVersionInfo implements Serializable {
   @AllArgsConstructor
   static class ReleaseInfo implements Serializable {
 
+    /**
+     * 发布线上版的时间
+     */
     @SerializedName("release_time")
     private Long releaseTime;
 
+    /**
+     * 线上版版本信息
+     */
     @SerializedName("release_version")
     private String releaseVersion;
 
+    /**
+     * 线上版本描述
+     */
     @SerializedName("release_desc")
     private String releaseDesc;
   }
