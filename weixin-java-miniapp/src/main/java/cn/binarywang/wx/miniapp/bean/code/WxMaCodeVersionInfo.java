@@ -19,6 +19,8 @@ import java.io.Serializable;
 @AllArgsConstructor
 public class WxMaCodeVersionInfo implements Serializable {
 
+  private static final long serialVersionUID = 6929700728659511688L;
+
   /**
    * 体验版信息
    */
@@ -38,7 +40,7 @@ public class WxMaCodeVersionInfo implements Serializable {
   @Data
   @NoArgsConstructor
   @AllArgsConstructor
-  static class ExpInfo implements Serializable {
+  public static class ExpInfo implements Serializable {
 
     /**
      * 提交体验版的时间
@@ -62,7 +64,7 @@ public class WxMaCodeVersionInfo implements Serializable {
   @Data
   @NoArgsConstructor
   @AllArgsConstructor
-  static class ReleaseInfo implements Serializable {
+  public static class ReleaseInfo implements Serializable {
 
     /**
      * 发布线上版的时间
